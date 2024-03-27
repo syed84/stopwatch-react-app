@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 
-// import "./stopwatch.css";
 const Stopwatch = (props) => {
   const [time, setTime] = useState(0);
   const [running, setRunning] = useState(false);
@@ -10,12 +9,6 @@ const Stopwatch = (props) => {
     if (running) {
       intervalId = setInterval(() => setTime(time + 1), 10);
     }
-    // useEffect Cleanup Function
-    // stop watch should be run w/o cleanup function
-    // what are props
-    // passing props to childern component
-    // sending data back to parent component
-    // component life cycle in react >>     most imp
 
     return () => {
       clearInterval(intervalId);
