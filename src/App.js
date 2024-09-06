@@ -1,13 +1,13 @@
 
 import "./App.css";
-import Todo from "./components/Todo";
+import Stopwatch from "./components/Stopwatch";
 
 
 function App() {
   return (
   <>
 
-    <Todo hd="TODO WEB APP"/>
+    <Stopwatch hd="StopWatch WEB APP"/>
   </>
 );
 }
